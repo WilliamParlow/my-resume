@@ -1,0 +1,104 @@
+* {
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+main#main {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar nav {
+  height: 6rem;
+  display: flex;
+  background-color: #444;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar ol, .navbar ol li, .navbar ol li a {
+  display: flex;
+  flex-grow: 1;
+}
+
+.navbar ol {
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ol li, .navbar ol li a {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar ol li a {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  background-color: #444;
+}
+
+.navbar ol li a:hover {
+  transition: .3s;
+  background-color: rgba(90, 90, 90, 0.8);
+}
+
+.resume-item {
+  height: 100vh;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.resume-item * {
+  color: #444;
+  padding: 0 3rem;
+}
+
+.resume-item header {
+  padding: 2rem 0;
+}
+
+.resume-item header h1 {
+  font-size: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.resume-item header h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-card {
+  position: absolute;
+  width: 60vw;
+  height: 40vh;
+  background-color: #444;
+}
+
+#dynamic-scroll {
+  transition: 1s ease-in-out;
+  transform: translateY(0px);
+}
+
+.resume-item:nth-child(2n) {
+  background-color: rgb(204, 204, 204);
+}
