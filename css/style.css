@@ -10,9 +10,9 @@ main#main {
 }
 
 .navbar nav {
-  height: 6rem;
+  height: 5rem;
   display: flex;
-  background-color: #444;
+  background-color: #222;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -38,18 +38,75 @@ main#main {
 }
 
 .navbar ol li a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
   text-align: center;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-  background-color: #444;
+  background-color: #222;
 }
 
 .navbar ol li a:hover {
   transition: 0.3s;
-  background-color: rgba(90, 90, 90, 0.8);
+  background-color: rgba(44, 44, 44, 0.8);
+}
+
+.navbar aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside.title {
+  width: 50%;
+  color: #fff;
+  flex-direction: row;
+  padding: 0 1.3rem;
+  align-items: center;
+  justify-content: start;
+}
+
+.title > div {
+  display: flex;
+  
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.title span {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.title .right-title {
+  margin-right: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.title .right-title::after {
+  content: '';
+  position: absolute;
+  right: -1rem;
+  height: 60%;
+  width: 2px;
+  background-color: #FFF;
+}
+
+.navigation {
+  width: 50%;
+  justify-content: center;
+}
+
+a.active {
+  color: #fff !important;
 }
 
 .resume-item,
@@ -64,13 +121,21 @@ main#main {
 }
 
 .resume-content {
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 5rem);
 }
 
 .resume-item {
   height: 100vh;
-  padding-top: 6rem;
+  padding-top: 5rem;
   position: relative;
+}
+
+.resume-item:nth-child(2n) {
+  background: linear-gradient(110deg, #333 60%, #282828 60%);
+}
+
+.resume-item:nth-child(2n + 1) {
+  background: linear-gradient(70deg, #333 60%, #282828 60%);
 }
 
 .resume-item * {
@@ -105,49 +170,69 @@ main#main {
 }
 
 .profile-card {
+  padding: 1rem;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
   background-color: #222;
   display: flex;
+  border-radius: 8px;
 }
 
 .profile-card * {
-  color: #fff;
+  color: #aaa;
 }
 
 .profile-card aside {
   display: flex;
   flex-grow: 1;
-  width: 50%;
+}
+
+.profile-card aside:nth-child(1) {
+  width: 40%;
+}
+
+.profile-card aside:nth-child(2) {
+  width: 60%;
 }
 
 .profile-info {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
-.profile-info h1 {
+.profile-info h1,
+.experience-info h1 {
   font-size: 2rem;
-  margin: 3rem 0 4rem 0;
+  margin: 2rem 0 2rem 0;
   position: relative;
   width: 100%;
+  color: #fff;
 }
 
-.profile-info h1::after {
+.profile-info h1::after,
+.experience-info h1::after {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #444;
   position: absolute;
-  bottom: -10px;
+  bottom: -1rem;
   left: 0;
 }
 
 .profile-info > div {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.profile-info > div > div {
   display: flex;
   width: 100%;
 }
@@ -159,21 +244,18 @@ main#main {
 }
 
 .profile-info p {
-  margin-top: 1rem;
-  text-indent: 20px;
+  text-indent: 16px;
   text-align: justify;
-  letter-spacing: 1px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
 }
 
 .profile-card aside img {
   width: 100%;
+  border-radius: 8px;
 }
 
 #dynamic-scroll {
   transition: 1s ease-in-out;
   transform: translateY(0px);
-}
-
-.resume-item:nth-child(2n) {
-  background-color: rgb(204, 204, 204);
 }

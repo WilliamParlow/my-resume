@@ -13,6 +13,7 @@
       href="./assets//icons/resume-icon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/scrolling.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -23,13 +24,23 @@
     <main id="main">
       <section class="navbar">
         <nav>
-          <ol>
-            <li><a href="#information">Information</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ol>
+          <aside class="title">
+            <div class="right-title">
+              <h1>Resume</h1>
+            </div>
+            <div>
+              <h1>William Parlow</h1>
+              <span>Web Developer</span>
+            </div>
+          </aside>
+          <aside class="navigation">
+            <ol>
+              <li><a href="#information" class="active">Information</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ol>
+          </aside>
         </nav>
       </section>
 
@@ -40,29 +51,48 @@
               <section class="profile-card">
                 <aside>
                   <img
-                    src="https://miro.medium.com/max/2048/0*0fClPmIScV5pTLoE.jpg"
+                    src="https://avatarfiles.alphacoders.com/131/131749.png"
                   />
                 </aside>
                 <aside class="profile-info">
                   <div>
-                    <h1>Let me introduce myself to you!</h1>
+                    <div>
+                      <h1>About me</h1>
+                    </div>
+                    <div>
+                      <p>
+                        Hello! My name is William Parlow. I live in Jaraguá do
+                        Sul located on state of Santa Catarina, Brazil. My wage
+                        claim Wage claim is between R$2042,00 and R$3037,00. You
+                        can contact me on my phone number +55 (47) 99669-7214 or
+                        send me an E-mail to williamparlow@gmail.com.
+                      </p>
+                    </div>
                   </div>
                   <div>
-                    <p>
-                      Hello! My name is William Parlow Nichelatti, but you can
-                      call me Will. I live in Jaraguá do Sul located on state of Santa
-                      Catarina, Brazil.
-                    </p>
-
-                    <p>
-                      My wage claim Wage claim is between R$2042,00 and
-                      R$3037,00.
-                    </p>
-
-                    <p>
-                      You can contact me on my phone number +55 (47) 99669-7214
-                      or send me an E-mail to williamparlow@gmail.com.
-                    </p>
+                    <div>
+                      <h1>Skills</h1>
+                    </div>
+                    <div>
+                      <p>
+                        I have worked with different people, with different
+                        cultures and distinct ways of thinking, which made me a
+                        good listener and a good negotiator, raising gains for
+                        the client and the development team. In this journey, I
+                        learn a lot of programming concepts and different
+                        programming paradigms, making me a flexible developer. I
+                        had contact with a lot of languages like Java, C/C++,
+                        C#, PHP, Python Kotlin and Javascript with HTML5 as
+                        markup language and CSS3 for styling. As programming
+                        tools and frameworks, I worked with Node.js, Serverless
+                        with google cloud (Firebase), Git, Ionic, Angular, React
+                        and React Native integrated with Redux. I'm always
+                        seeking good programming practices, learning with my
+                        mistakes and making better codes through lessons
+                        learned. I'm Fluent on Brazilian Portuguese and English
+                        as well, and a very little of German.
+                      </p>
+                    </div>
                   </div>
                 </aside>
               </section>
@@ -70,23 +100,74 @@
           </article>
         </section>
 
-        <section id="skills" class="resume-item" data-index="2">
+        <section id="experience" class="resume-item" data-index="2">
           <article class="resume-content">
-            <header>
-              <h1>Skills</h1>
-            </header>
+            <section class="profile-content">
+              <section class="profile-card">
+                <aside class="experience-info">
+                  <div>
+                    <div>
+                      <h1>Experience</h1>
+                    </div>
+                    <div>
+                      <p>
+                        Trainee at Catholic University, Jaraguá do Sul — Full
+                        Stack Developer AUGUST 2016 — 2018 Development of a
+                        cashflow manager using MySQL, PHP, Javascript, HTML5,
+                        CSS3 and builded and configured an environment to a
+                        document flow manager, developed with Java called
+                        Fusion, from Neomind, using SQL Server on Windows Server
+                        and tomcat on Ubuntu.
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        Freelancer, Jaraguá do Sul — Full Stack Web Developer
+                        JULY 2017 — AUGUST 2017 I developed a MVP mobile
+                        application called Lidfix with Ionic 3, Angular 4 and
+                        firebase for database. This application helps clients
+                        who want some services and budgets without going out
+                        from your homes, knowing the best establishment by rate
+                        and location.
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        Metalnox, Jaraguá do Sul — IT Support MARCH 2016 — JULY
+                        2016 I helped company employees with computer hardware,
+                        software use and network problems, changes, repairs and
+                        configuration on network components, documentation and
+                        organization and others IT activities.
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        Trainee at WEG, Jaraguá do Sul — WEB Developer AUGUST
+                        2018 — 2019 I worked with automated functional tests
+                        with TestNG and Selenium Webdriver with Java in order to
+                        improve the quality of WEG e-commerce software. I else
+                        helped on the development of Spring Boot Applications.
+                      </p>
+                    </div>
+                    <div>
+                      <p>
+                        WEG, Jaraguá do Sul — WEB Developer JUNE 2019 — NOW I am
+                        working with Java integrated with Spring Boot on Hybris
+                        platform, developing new E-Commerce features, helping
+                        the mainitence of both backend (Java, JSP, XML) and
+                        frontend(JavaScript, SASS/CSS, HTML). I also worked with
+                        React for WEB applications, using a lot of features like
+                        Axios, Redux and others.
+                      </p>
+                    </div>
+                  </div>
+                </aside>
+              </section>
+            </section>
           </article>
         </section>
 
-        <section id="experience" class="resume-item" data-index="3">
-          <article class="resume-content">
-            <header>
-              <h1>Experience</h1>
-            </header>
-          </article>
-        </section>
-
-        <section id="education" class="resume-item" data-index="4">
+        <section id="education" class="resume-item" data-index="3">
           <article class="resume-content">
             <header>
               <h1>Education</h1>
@@ -94,7 +175,7 @@
           </article>
         </section>
 
-        <section id="projects" class="resume-item" data-index="5">
+        <section id="projects" class="resume-item" data-index="4">
           <article class="resume-content">
             <header>
               <h1>Projects</h1>

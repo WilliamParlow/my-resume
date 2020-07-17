@@ -5,6 +5,10 @@ window.onload = () => {
   document.querySelectorAll('.navbar ol li a').forEach(el => {
     el.onclick = e => {
       e.preventDefault();
+      
+      document.querySelector('.navbar ol li a.active').classList.remove('active');
+      e.target.classList.add('active');
+      
       const section = document.querySelector(e.target.getAttribute('href'));
       const currentIndex = parseInt(section.dataset.index);
 
