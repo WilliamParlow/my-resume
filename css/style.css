@@ -18,9 +18,7 @@ main#main {
   width: 100%;
 }
 
-.navbar ol,
-.navbar ol li,
-.navbar ol li a {
+.navbar ol, .navbar ol li, .navbar ol li a {
   display: flex;
   flex-grow: 1;
 }
@@ -31,8 +29,7 @@ main#main {
   align-items: center;
 }
 
-.navbar ol li,
-.navbar ol li a {
+.navbar ol li, .navbar ol li a {
   width: 100%;
   height: 100%;
 }
@@ -66,9 +63,8 @@ aside.title {
   justify-content: start;
 }
 
-.title > div {
+.title>div {
   display: flex;
-
   flex-direction: column;
   height: 100%;
   justify-content: center;
@@ -109,9 +105,7 @@ a.active {
   color: #fff !important;
 }
 
-.resume-item,
-.resume-content,
-.resume-content .profile-content {
+.resume-item, .resume-content, .resume-content .profile-content {
   display: flex;
   flex-direction: column;
 }
@@ -193,6 +187,7 @@ a.active {
   width: 100%;
   justify-content: center;
   top: -100px;
+  left: 0;
 }
 
 .profile-image img {
@@ -209,8 +204,7 @@ a.active {
   width: 50%;
 }
 
-.profile-info,
-.timeline {
+.profile-info, .timeline {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -219,8 +213,7 @@ a.active {
   overflow-y: auto;
 }
 
-.profile-info h1,
-.experience-info h1 {
+.profile-info h1, .experience-info h1 {
   font-size: 2rem;
   margin: 2rem 0 2rem 0;
   position: relative;
@@ -228,8 +221,7 @@ a.active {
   color: #fff;
 }
 
-.profile-info h1::after,
-.experience-info h1::after {
+.profile-info h1::after, .experience-info h1::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -239,19 +231,19 @@ a.active {
   left: 0;
 }
 
-.profile-info > div {
+.profile-info>div {
   display: flex;
   flex-flow: column;
   flex-grow: 1;
   width: 100%;
 }
 
-.profile-info > div > div {
+.profile-info>div>div {
   display: flex;
   width: 100%;
 }
 
-.profile-info > div:not(:nth-child(1)) {
+.profile-info>div:not(:nth-child(1)) {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -262,12 +254,6 @@ a.active {
   text-align: justify;
   font-size: 0.8rem;
   line-height: 1.3rem;
-}
-
-.profile-image {
-  border-radius: 1000px;
-  width: 200px;
-  height: 200px;
 }
 
 #dynamic-scroll {
@@ -302,7 +288,7 @@ a.active {
   align-items: center;
 }
 
-.timeline-row > div {
+.timeline-row>div {
   width: 50%;
   display: flex;
   flex-grow: 1;
@@ -326,6 +312,10 @@ a.active {
   display: inline-block;
 }
 
+.nav-item-icon {
+  display: none;
+}
+
 .timeline-row:nth-child(2n) {
   flex-direction: row-reverse;
 }
@@ -341,4 +331,79 @@ a.active {
 
 .timeline-row:nth-child(2n + 1) .year span {
   left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .title .right-title {
+    display: none;
+  }
+  .nav-item-icon {
+    display: initial;
+  }
+  .nav-item-desc {
+    display: none;
+  }
+  aside.title {
+    padding: 0 0 0 1rem;
+    width: fit-content;
+  }
+  aside.title h1 {
+    font-size: 80%;
+  }
+  aside.title span {
+    font-size: 50%;
+  }
+  .navbar nav {
+    justify-content: space-between;
+  }
+  .profile-card {
+    height: calc(100% - 60px);
+    width: calc(100% - 2ch);
+  }
+  .information-profile-card {
+    width: calc(100% - 2ch);
+    height: calc(100% - 160px);
+  }
+  .profile-image img {
+    width: 160px;
+    height: 160px;
+  }
+  .timeline {
+    padding: 0;
+  }
+  .timeline p {
+    text-align: initial;
+  }
+  .timeline-row>div {
+    padding: 0;
+    margin: 0;
+  }
+  .timeline-row>div.year {
+    order: 1;
+  }
+  .timeline-row>div:nth-child(1) {
+    order: 2;
+    padding: 1rem;
+  }
+  .timeline .timeline-row {
+    flex-direction: row;
+  }
+  .timeline-row > .year {
+    display: flex;
+    justify-content: flex-start;
+    width: 4ch;
+    padding-left: 30px;
+  }
+  .timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    background-color: #ffb0b0;
+  }
+  .timeline > .timeline-row > div.year > span {
+    left: 8px;
+  }
 }
