@@ -1,235 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets//icons/resume-icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./css/scrolling.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Resume - William Parlow</title>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets//icons/resume-icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/scrolling.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-  <body>
-    <main id="main">
-      <section class="navbar">
-        <nav>
-          <aside class="title">
-            <div class="right-title">
-              <h1>Resume</h1>
-            </div>
-            <div>
-              <h1>William Parlow</h1>
-              <span>Web Developer</span>
-            </div>
-          </aside>
-          <aside class="navigation">
-            <ol>
-              <li><a href="#information" class="active">Information</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#projects">Projects</a></li>
-            </ol>
-          </aside>
-        </nav>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Resume - William Parlow</title>
+</head>
+
+<body>
+  <main id="main">
+    <section class="navbar">
+      <nav>
+        <aside class="title">
+          <div class="right-title">
+            <h1>Resume</h1>
+          </div>
+          <div>
+            <h1>William Parlow</h1>
+            <span>Web Developer</span>
+          </div>
+        </aside>
+        <aside class="navigation">
+          <ol>
+            <li>
+              <a href="#information" class="active">
+                <span class="nav-item-desc">Information</span>
+                <span class="nav-item-icon"><i class="fas fa-info"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#experience">
+                <span class="nav-item-desc">Experience</span>
+                <span class="nav-item-icon"><i class="fas fa-flask"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <span class="nav-item-desc">Education</span>
+                <span class="nav-item-icon"><i class="fas fa-university"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <span class="nav-item-desc">Projects</span>
+                <span class="nav-item-icon"><i class="fas fa-project-diagram"></i></span>
+              </a>
+            </li>
+          </ol>
+        </aside>
+      </nav>
+    </section>
+
+    <section id="dynamic-scroll">
+      <section id="information" class="resume-item" data-index="1">
+        <article class="resume-content">
+          <section class="profile-content">
+            <section class="profile-card information-profile-card">
+              <aside class="profile-image">
+                <img src="./assets/img/profile.webp" />
+              </aside>
+              <aside class="profile-info">
+                <div>
+                  <div>
+                    <h1>About me</h1>
+                  </div>
+                  <div>
+                    <p>
+                      Hello! My name is William Parlow. I live in Jaraguá do
+                      Sul located on state of Santa Catarina, Brazil. You
+                      can contact me on my phone number +55 (47) 99669-7214 or
+                      send me an E-mail to williamparlow@gmail.com.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h1>Skills</h1>
+                  </div>
+                  <div>
+                    <p>
+                      I have worked with different people, with different
+                      cultures and distinct ways of thinking, which made me a
+                      good listener and a good negotiator, raising gains for
+                      the client and the development team. In this journey, I
+                      learn a lot of programming concepts and different
+                      programming paradigms, making me a flexible developer. I
+                      had contact with a lot of languages like Java, C/C++,
+                      C#, PHP, Python Kotlin and Javascript with HTML5 as
+                      markup language and CSS3 for styling. As programming
+                      tools and frameworks, I worked with Node.js, Serverless
+                      with google cloud (Firebase), Git, Ionic, Angular, React
+                      and React Native integrated with Redux. I'm always
+                      seeking good programming practices, learning with my
+                      mistakes and making better codes through lessons
+                      learned. I'm Fluent on Brazilian Portuguese,
+                      intermediary level in English, and a very little
+                      knowledge of German.
+                    </p>
+                  </div>
+                </div>
+              </aside>
+            </section>
+          </section>
+        </article>
       </section>
 
-      <section id="dynamic-scroll">
-        <section id="information" class="resume-item" data-index="1">
-          <article class="resume-content">
-            <section class="profile-content">
-              <section class="profile-card information-profile-card">
-                <aside class="profile-image">
-                  <img src="./assets/img/profile.webp" />
-                </aside>
-                <aside class="profile-info">
-                  <div>
-                    <div>
-                      <h1>About me</h1>
-                    </div>
-                    <div>
-                      <p>
-                        Hello! My name is William Parlow. I live in Jaraguá do
-                        Sul located on state of Santa Catarina, Brazil. You
-                        can contact me on my phone number +55 (47) 99669-7214 or
-                        send me an E-mail to williamparlow@gmail.com.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <h1>Skills</h1>
-                    </div>
-                    <div>
-                      <p>
-                        I have worked with different people, with different
-                        cultures and distinct ways of thinking, which made me a
-                        good listener and a good negotiator, raising gains for
-                        the client and the development team. In this journey, I
-                        learn a lot of programming concepts and different
-                        programming paradigms, making me a flexible developer. I
-                        had contact with a lot of languages like Java, C/C++,
-                        C#, PHP, Python Kotlin and Javascript with HTML5 as
-                        markup language and CSS3 for styling. As programming
-                        tools and frameworks, I worked with Node.js, Serverless
-                        with google cloud (Firebase), Git, Ionic, Angular, React
-                        and React Native integrated with Redux. I'm always
-                        seeking good programming practices, learning with my
-                        mistakes and making better codes through lessons
-                        learned. I'm Fluent on Brazilian Portuguese,
-                        intermediary level in English, and a very little
-                        knowledge of German.
-                      </p>
-                    </div>
-                  </div>
-                </aside>
-              </section>
+      <section id="experience" class="resume-item" data-index="2">
+        <article class="resume-content">
+          <section class="profile-content">
+            <section class="profile-card timeline">
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Metalnox, Jaraguá do Sul — IT Support — I helped company
+                    employees with computer hardware, software use and network
+                    problems, changes, repairs and configuration on network
+                    components, documentation and organization and others IT
+                    activities.
+                  </p>
+                </div>
+                <div class="year"><span></span>2016</div>
+              </div>
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Trainee at Catholic University, Jaraguá do Sul — Full
+                    Stack Developer — Development of a cashflow manager using
+                    MySQL, PHP, Javascript, HTML5, CSS3 and builded and
+                    configured an environment to a document flow manager,
+                    developed with Java called Fusion, from Neomind, using SQL
+                    Server on Windows Server and tomcat on Ubuntu.
+                  </p>
+                </div>
+                <div class="year"><span></span>2016 - 2018</div>
+              </div>
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Freelancer, Jaraguá do Sul — Full Stack Web Developer — I
+                    developed a MVP mobile application called Lidfix with
+                    Ionic 3, Angular 4 and firebase for database. This
+                    application helps clients who want some services and
+                    budgets without going out from your homes, knowing the
+                    best establishment by rate and location.
+                  </p>
+                </div>
+                <div class="year"><span></span>2017</div>
+              </div>
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Trainee at WEG, Jaraguá do Sul — WEB Developer — I worked
+                    with automated functional tests with TestNG and Selenium
+                    Webdriver with Java in order to improve the quality of WEG
+                    e-commerce software. I else helped on the development of
+                    Spring Boot Applications.
+                  </p>
+                </div>
+                <div class="year"><span></span>2019</div>
+              </div>
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    WEG, Jaraguá do Sul — WEB Developer — I am working with
+                    Java integrated with Spring Boot on Hybris platform,
+                    developing new E-Commerce features, helping the mainitence
+                    of both backend (Java, JSP, XML) and frontend(JavaScript,
+                    SASS/CSS, HTML). I also worked with React for WEB
+                    applications, using a lot of features like Axios, Redux
+                    and others.
+                  </p>
+                </div>
+                <div class="year"><span></span>2019 - now</div>
+              </div>
             </section>
-          </article>
-        </section>
-
-        <section id="experience" class="resume-item" data-index="2">
-          <article class="resume-content">
-            <section class="profile-content">
-              <section class="profile-card timeline">
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Metalnox, Jaraguá do Sul — IT Support — I helped company
-                      employees with computer hardware, software use and network
-                      problems, changes, repairs and configuration on network
-                      components, documentation and organization and others IT
-                      activities.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2016</div>
-                </div>
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Trainee at Catholic University, Jaraguá do Sul — Full
-                      Stack Developer — Development of a cashflow manager using
-                      MySQL, PHP, Javascript, HTML5, CSS3 and builded and
-                      configured an environment to a document flow manager,
-                      developed with Java called Fusion, from Neomind, using SQL
-                      Server on Windows Server and tomcat on Ubuntu.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2016 - 2018</div>
-                </div>
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Freelancer, Jaraguá do Sul — Full Stack Web Developer — I
-                      developed a MVP mobile application called Lidfix with
-                      Ionic 3, Angular 4 and firebase for database. This
-                      application helps clients who want some services and
-                      budgets without going out from your homes, knowing the
-                      best establishment by rate and location.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2017</div>
-                </div>
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Trainee at WEG, Jaraguá do Sul — WEB Developer — I worked
-                      with automated functional tests with TestNG and Selenium
-                      Webdriver with Java in order to improve the quality of WEG
-                      e-commerce software. I else helped on the development of
-                      Spring Boot Applications.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2019</div>
-                </div>
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      WEG, Jaraguá do Sul — WEB Developer — I am working with
-                      Java integrated with Spring Boot on Hybris platform,
-                      developing new E-Commerce features, helping the mainitence
-                      of both backend (Java, JSP, XML) and frontend(JavaScript,
-                      SASS/CSS, HTML). I also worked with React for WEB
-                      applications, using a lot of features like Axios, Redux
-                      and others.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2019 - now</div>
-                </div>
-              </section>
-            </section>
-          </article>
-        </section>
-
-        <section id="education" class="resume-item" data-index="3">
-          <article class="resume-content">
-            <section class="profile-content">
-              <section class="profile-card timeline">
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      SENAI de Santa Catarina, Jaraguá do Sul — Network Technician — This 
-                      course was part of Cisco Network Academy program, with a lot practices 
-                      and theory about Linux, automation, good practices for IT service 
-                      management and governance of information technology.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2013 – 2015</div>
-                </div>
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Católica de Santa Catarina, Jaraguá do Sul — Bachelor in Information Systems — Focused 
-                      on training of professionals for technical work, human capacity, 
-                      teamwork, interpret and express ideas in clear and coherent way through 
-                      in different programming languages (as Java), apply knowledge in a 
-                      creative and innovative way, use appropriate methodologies to each 
-                      situation, to be an innovator, and reference professional in your 
-                      area of expertise.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2016 — 2020</div>
-                </div>
-              </section>
-            </section>
-          </article>
-        </section>
-
-        <section id="projects" class="resume-item" data-index="4">
-          <article class="resume-content">
-            <section class="profile-content">
-              <section class="profile-card timeline">
-                <div class="timeline-row">
-                  <div>
-                    <p>
-                      Wickedbotz Robotics Group — Researcher and Competitor — This is a 
-                      multidisciplinary team that develops autonomous robots. I help to 
-                      develop new technologies to increase performance of autonomous robots 
-                      and aid new members to develop your self code and improve programming 
-                      techniques. I worked on Trekking category of autonomous robots, where 
-                      I got 3rd place on Winter Challenge 2016, 2nd place on Winter Challenge 
-                      2017 and 2nd place on Winter Challenge 2018.
-                    </p>
-                  </div>
-                  <div class="year"><span></span>2016 - 2019</div>
-                </div>
-              </section>
-            </section>
-          </article>
-        </section>
+          </section>
+        </article>
       </section>
-    </main>
 
-    <script src="./js/index.js"></script>
-  </body>
+      <section id="education" class="resume-item" data-index="3">
+        <article class="resume-content">
+          <section class="profile-content">
+            <section class="profile-card timeline">
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    SENAI de Santa Catarina, Jaraguá do Sul — Network Technician — This
+                    course was part of Cisco Network Academy program, with a lot practices
+                    and theory about Linux, automation, good practices for IT service
+                    management and governance of information technology.
+                  </p>
+                </div>
+                <div class="year"><span></span>2013 – 2015</div>
+              </div>
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Católica de Santa Catarina, Jaraguá do Sul — Bachelor in Information Systems — Focused
+                    on training of professionals for technical work, human capacity,
+                    teamwork, interpret and express ideas in clear and coherent way through
+                    in different programming languages (as Java), apply knowledge in a
+                    creative and innovative way, use appropriate methodologies to each
+                    situation, to be an innovator, and reference professional in your
+                    area of expertise.
+                  </p>
+                </div>
+                <div class="year"><span></span>2016 — 2020</div>
+              </div>
+            </section>
+          </section>
+        </article>
+      </section>
+
+      <section id="projects" class="resume-item" data-index="4">
+        <article class="resume-content">
+          <section class="profile-content">
+            <section class="profile-card timeline">
+              <div class="timeline-row">
+                <div>
+                  <p>
+                    Wickedbotz Robotics Group — Researcher and Competitor — This is a
+                    multidisciplinary team that develops autonomous robots. I help to
+                    develop new technologies to increase performance of autonomous robots
+                    and aid new members to develop your self code and improve programming
+                    techniques. I worked on Trekking category of autonomous robots, where
+                    I got 3rd place on Winter Challenge 2016, 2nd place on Winter Challenge
+                    2017 and 2nd place on Winter Challenge 2018.
+                  </p>
+                </div>
+                <div class="year"><span></span>2016 - 2019</div>
+              </div>
+            </section>
+          </section>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
