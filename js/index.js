@@ -3,13 +3,18 @@ window.onload = () => {
   let currentTransform = 0;
   const dynamicScrollEl = document.querySelector('#dynamic-scroll');
   document.querySelectorAll('.navbar ol li a').forEach(el => {
-    el.onclick = e => {
+
+    const makeTransition = e => {
       e.preventDefault();
-      
+      let target = e.target;
+
+      while (target.nodeName !== 'A')
+        target = target.parentNode;
+
       document.querySelector('.navbar ol li a.active').classList.remove('active');
-      e.target.classList.add('active');
-      
-      const section = document.querySelector(e.target.getAttribute('href'));
+      target.classList.add('active');
+
+      const section = document.querySelector(target.getAttribute('href'));
       const currentIndex = parseInt(section.dataset.index);
 
       if (currentIndex > lastIndex) {
@@ -24,5 +29,7 @@ window.onload = () => {
         lastIndex = currentIndex;
       }
     }
+
+    el.onclick = e => makeTransition(e);
   });
 }
