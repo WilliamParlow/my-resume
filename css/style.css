@@ -6,7 +6,7 @@
 main#main {
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: clac(100vw - 6px);
 }
 
 .navbar nav {
@@ -105,7 +105,7 @@ a.active {
   color: #fff !important;
 }
 
-.resume-item, .resume-content, .resume-content .profile-content {
+.resume-item, .resume-content {
   display: flex;
   flex-direction: column;
 }
@@ -369,6 +369,12 @@ a.active {
     width: 160px;
     height: 160px;
   }
+  .profile-content {
+    flex-direction: row;
+  }
+  .timeline {
+    overflow: hidden;
+  }
   .timeline {
     padding: 0;
   }
@@ -389,22 +395,20 @@ a.active {
   .timeline .timeline-row {
     flex-direction: row;
   }
-  .timeline-row > .year {
+  .timeline-row > .year,
+  .timeline-row:nth-child(2n) .year {
     display: flex;
     justify-content: flex-start;
     width: 4ch;
     padding-left: 30px;
   }
   .timeline::after {
-    content: "";
-    position: absolute;
-    top: 0;
     left: 16px;
-    width: 4px;
-    height: 100%;
-    background-color: #ffb0b0;
   }
   .timeline > .timeline-row > div.year > span {
     left: 8px;
+  }
+  section.resume-item:not(#information) .resume-content {
+    overflow-y: auto;
   }
 }
